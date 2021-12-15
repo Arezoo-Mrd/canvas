@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from "react";
+<<<<<<< HEAD
 import { NavLink } from "react-router-dom";
 import Content from "../Content/Content";
+=======
+>>>>>>> e258d3c2c5cf91bd91c846a9d578be239feb4f86
 import styles from "./DrawLine.module.css";
 const DrawLine = () => {
     const canvas = useRef(null);
