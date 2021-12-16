@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from "react";
-<<<<<<< HEAD
 import { NavLink } from "react-router-dom";
 import Content from "../Content/Content";
-=======
->>>>>>> e258d3c2c5cf91bd91c846a9d578be239feb4f86
+import CompleteShape from "./CompleteShape/CompleteShape";
 import styles from "./DrawLine.module.css";
 const DrawLine = () => {
     const canvas = useRef(null);
@@ -67,16 +65,24 @@ const DrawLine = () => {
         context.lineJoin = 'bevel' // 'miter' ---> default , 'bevel','round'
         context.lineWidth = 10;
         context.strokeStyle = 'black'
+        // shadow
+        context.shadowColor='red';
+        context.shadowOffsetX=8;
+        context.shadowOffsetY=10;
+        context.shadowBlur=5;
         context.stroke()
+
+        
 
        
     }, []);
 
     return (
-        <div className="d-flex justify-content-center align-items-center w-100">
+        <div className=" w-100">
             <canvas className="border border-dark w-100" ref={canvas}>
                 Your browser does not support the HTML canvas tag.
             </canvas>
+            <CompleteShape />
         </div>
     );
 };
