@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router";
 import AllShape from "../AllShape/AllShape";
 import Chessboard from "../Chessboard/Chessboard";
+import Circle from "../Circle/Circle";
 import Content from "../Content/Content";
 import Curves from "../Curves/Curves";
 import DrawLine from "../DrawLine/DrawLine";
@@ -24,6 +25,7 @@ const Main = () => {
                 <Route element={<Curves />} path={"/draw_curves"} />
                 <Route element={<AllShape />} path={"/all_shapes"} />
                 <Route element={<Chessboard />} path={"/chessboard"} />
+                <Route element={<Circle />} path={"/circle"} />
             </Routes>
         </div>
     );
