@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react'
+import Bezier from './Bezier/Bezier'
+import Quadratic from './Quadratic/Quadratic'
 
 const Curves = () => {
 
-    const canvas = useRef(null)
+        const canvas = useRef(null)
 
     useEffect(() => {
 
@@ -29,6 +31,8 @@ const Curves = () => {
     return (
         <div className="w-100 h-100">
             <canvas className="w-100 border border-dark" ref = {canvas}></canvas>
+            <Quadratic />
+            <Bezier />
         </div>
     )
 }
