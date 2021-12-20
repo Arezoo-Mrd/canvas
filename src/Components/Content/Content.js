@@ -12,6 +12,7 @@ const Content = () => {
             <NavLink to ={'/circle'}>Circle</NavLink>
             <NavLink to ={'/pac_man'}>Pacman</NavLink>
             <NavLink to ={'/polygons'}>polygons</NavLink>
+            <NavLink to ={'/shadows1'}>shadow shapes 1</NavLink>
         </div>
     )
 }

@@ -9,6 +9,7 @@ import DrawLine from "../DrawLine/DrawLine";
 import Helloworls from "../HelloWorld/Helloworls";
 import PacMan from "../PacMan/PacMan";
 import Polygons from "../Polygon/Polygons";
+import ShadowsShapes1 from "../ShadowsShapes1/ShadowsShapes1";
 
 const Main = () => {
     let css =
@@ -30,6 +31,7 @@ const Main = () => {
                 <Route element={<Circle />} path={"/circle"} />
                 <Route element={<PacMan />} path={"/pac_man"} />
                 <Route element={<Polygons />} path={"/polygons"} />
+                <Route element={<ShadowsShapes1 />} path={"/shadows1"} />
             </Routes>
         </div>
     );
