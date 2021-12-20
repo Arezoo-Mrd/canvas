@@ -11,6 +11,7 @@ const Content = () => {
             <NavLink to ={'/chessboard'}>Chessboard</NavLink>
             <NavLink to ={'/circle'}>Circle</NavLink>
             <NavLink to ={'/pac_man'}>Pacman</NavLink>
+            <NavLink to ={'/polygons'}>polygons</NavLink>
         </div>
     )
 }
