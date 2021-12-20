@@ -38,36 +38,47 @@ const PositionText = () => {
         context.textAlign = "end";
         context.fillText("end", 300, 140);
 
-
-           // Horizontal reference line
-           context.strokeStyle = "red";
-           context.moveTo(20, 300);
-           context.lineTo(580, 300);
-           context.stroke();
-
+        // Horizontal reference line
+        context.strokeStyle = "red";
+        context.moveTo(20, 300);
+        context.lineTo(580, 300);
+        context.stroke();
 
         //Apply TextBaseline values
-        context.textBaseline='alphabetic';
-        context.fillText("alphabetic",120, 300)
+        context.textBaseline = "alphabetic";
+        context.fillText("alphabetic", 120, 300);
 
-        context.textBaseline='top';
-        context.fillText("top",220, 300)
-        
-        context.textBaseline='hanging';
-        context.fillText("hanging",320, 300)
+        context.textBaseline = "top";
+        context.fillText("top", 220, 300);
 
-        context.textBaseline='middle';
-        context.fillText("middle",420, 300);
-        
-        
-        context.textBaseline='ideographic';
-        context.fillText("ideographic",550, 300)  
-        
-        
-        context.textBaseline='bottom';
-        context.fillText("bottom",650, 300)
+        context.textBaseline = "hanging";
+        context.fillText("hanging", 320, 300);
 
-       
+        context.textBaseline = "middle";
+        context.fillText("middle", 420, 300);
+
+        context.textBaseline = "ideographic";
+        context.fillText("ideographic", 550, 300);
+
+        context.textBaseline = "bottom";
+        context.fillText("bottom", 650, 300);
+
+        const shadow_text = "This text will be shadowed";
+        // FillText Function
+        context.font = "normal 700 24px times";
+        context.shadowColor = "red";
+        context.shadowOffsetX = 5;
+        context.shadowOffsetY = 5;
+        context.shadowBlur = 4;
+        context.fillText(shadow_text, 500, 500);
+
+        // strockeText Function
+        context.font = "italic 400 48px monospace";
+        context.shadowColor = "green";
+        context.shadowOffsetX = -5;
+        context.shadowOffsetY = -5;
+        context.shadowBlur = 4;
+        context.strokeText(shadow_text, 800, 600);
     }, []);
 
     return <canvas width="900" height="600" ref={canvas}></canvas>;
