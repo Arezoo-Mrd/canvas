@@ -78,8 +78,8 @@ const DrawLine = () => {
     }, []);
 
     return (
-        <div className=" w-100">
-            <canvas className="border border-dark w-100" ref={canvas}>
+        <div>
+            <canvas width="900" height="600" className="border border-dark" ref={canvas}>
                 Your browser does not support the HTML canvas tag.
             </canvas>
             <CompleteShape />

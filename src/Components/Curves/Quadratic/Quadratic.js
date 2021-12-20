@@ -23,7 +23,7 @@ const Quadratic =() => {
     
     return (
         <div>
-            <canvas ref = {canvas} className="w-100 border border-dark"></canvas>
+            <canvas width="900" height="600" ref = {canvas} className="w-100 border border-dark"></canvas>
         </div>
     )
 }

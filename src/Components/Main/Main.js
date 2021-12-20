@@ -7,6 +7,7 @@ import Content from "../Content/Content";
 import Curves from "../Curves/Curves";
 import DrawLine from "../DrawLine/DrawLine";
 import Helloworls from "../HelloWorld/Helloworls";
+import PacMan from "../PacMan/PacMan";
 
 const Main = () => {
     let css =
@@ -26,6 +27,7 @@ const Main = () => {
                 <Route element={<AllShape />} path={"/all_shapes"} />
                 <Route element={<Chessboard />} path={"/chessboard"} />
                 <Route element={<Circle />} path={"/circle"} />
+                <Route element={<PacMan />} path={"/pac_man"} />
             </Routes>
         </div>
     );

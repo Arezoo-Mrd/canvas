@@ -10,6 +10,7 @@ const Content = () => {
             <NavLink to ={'/all_shapes'}>All Shapes</NavLink>
             <NavLink to ={'/chessboard'}>Chessboard</NavLink>
             <NavLink to ={'/circle'}>Circle</NavLink>
+            <NavLink to ={'/pac_man'}>Pacman</NavLink>
         </div>
     )
 }

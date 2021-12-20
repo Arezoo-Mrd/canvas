@@ -1,21 +1,23 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 
 const Circle = () => {
     const canvas = useRef(null);
-    useEffect(() => {
+    useLayoutEffect(() => {
         const radian = Math.PI / 180;
-        const context = canvas.current.getContext();
+        const context = canvas.current.getContext('2d');
 
         context.beginPath();
         context.strokeStyle = "red";
-        context.lineWidth = 15;
-        context.arc(200, 200, 5, radian *0, radian * 360, true);
+        context.fillStyle = "orange"
+        context.lineWidth = 5;
+        context.arc(150, 50, 25, radian * 135, radian * 360, false);
         context.stroke();
+        context.fill()
     }, []);
     return (
-        <div className="w-100">
-            <canvas className="w-100 border border-dark" ref={canvas}></canvas>
-        </div>
+      
+            <canvas width="900" height="600" className="border border-dark" ref={canvas}></canvas>
+        
     );
 };
 

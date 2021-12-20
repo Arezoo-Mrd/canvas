@@ -48,10 +48,11 @@ const Chessboard = () => {
         
     }, []);
     return (
-        <div className="w-100">
+        <div>
             <canvas
+            width="900" height="600"
                 ref={canvas}
-                className="w-100 bodrer"
+                className="bodrer"
             ></canvas>
         </div>
     );
