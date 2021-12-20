@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router";
+import ThreeDText from "../3DText/3DText";
 import AllShape from "../AllShape/AllShape";
 import BasicText from "../BasicText/BasicText";
 import Chessboard from "../Chessboard/Chessboard";
@@ -34,6 +35,7 @@ const Main = () => {
                 <Route element={<Polygons />} path={"/polygons"} />
                 <Route element={<ShadowsShapes1 />} path={"/shadows1"} />
                 <Route element={<BasicText />} path={"/basic_text"} />
+                <Route element={<ThreeDText />} path={"/3d_text"} />
             </Routes>
         </div>
     );
