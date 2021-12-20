@@ -29,8 +29,8 @@ const Curves = () => {
     },[])
 
     return (
-        <div className="w-100 h-100">
-            <canvas className="w-100 border border-dark" ref = {canvas}></canvas>
+        <div>
+            <canvas width="900" height="600" className=" border border-dark" ref = {canvas}></canvas>
             <Quadratic />
             <Bezier />
         </div>

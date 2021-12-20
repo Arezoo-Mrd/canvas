@@ -21,7 +21,7 @@ function Helloworls() {
 
     return (
       
-          <canvas className={styles.CanvasWrapper} ref = {canvas}>
+          <canvas width="900" height="600" className={styles.CanvasWrapper} ref = {canvas}>
             Your browser does not support the HTML canvas tag.
           </canvas>
         

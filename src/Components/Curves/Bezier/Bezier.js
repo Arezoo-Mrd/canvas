@@ -18,7 +18,7 @@ const Bezier = () => {
     },[])
     return (
         <div>
-            <canvas className="border border-dark w-100" ref={canvas}> </canvas>
+            <canvas width="900" height="600" className="border border-dark" ref={canvas}> </canvas>
         </div>
     )
 }

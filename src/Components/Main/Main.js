@@ -1,11 +1,18 @@
 import React from "react";
 import { Route, Routes } from "react-router";
+import ThreeDText from "../3DText/3DText";
 import AllShape from "../AllShape/AllShape";
+import BasicText from "../BasicText/BasicText";
 import Chessboard from "../Chessboard/Chessboard";
+import Circle from "../Circle/Circle";
 import Content from "../Content/Content";
 import Curves from "../Curves/Curves";
 import DrawLine from "../DrawLine/DrawLine";
 import Helloworls from "../HelloWorld/Helloworls";
+import PacMan from "../PacMan/PacMan";
+import Polygons from "../Polygon/Polygons";
+import PositionText from "../PositionText/PositionText";
+import ShadowsShapes1 from "../ShadowsShapes1/ShadowsShapes1";
 
 const Main = () => {
     let css =
@@ -24,6 +31,13 @@ const Main = () => {
                 <Route element={<Curves />} path={"/draw_curves"} />
                 <Route element={<AllShape />} path={"/all_shapes"} />
                 <Route element={<Chessboard />} path={"/chessboard"} />
+                <Route element={<Circle />} path={"/circle"} />
+                <Route element={<PacMan />} path={"/pac_man"} />
+                <Route element={<Polygons />} path={"/polygons"} />
+                <Route element={<ShadowsShapes1 />} path={"/shadows1"} />
+                <Route element={<BasicText />} path={"/basic_text"} />
+                <Route element={<ThreeDText />} path={"/3d_text"} />
+                <Route element={<PositionText />} path={"/position_text"} />
             </Routes>
         </div>
     );

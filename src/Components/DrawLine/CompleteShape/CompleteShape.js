@@ -27,7 +27,7 @@ const CompleteShape = () => {
 
     return (
         <div>
-            <canvas className="w-100 border border-danger" ref={canvas}>
+            <canvas width="900" height="600" className=" border border-danger" ref={canvas}>
                 Your browser does not support the HTML canvas tag.
             </canvas>
         </div>
