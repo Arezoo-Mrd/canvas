@@ -11,6 +11,7 @@ import DrawLine from "../DrawLine/DrawLine";
 import Helloworls from "../HelloWorld/Helloworls";
 import PacMan from "../PacMan/PacMan";
 import Polygons from "../Polygon/Polygons";
+import PositionText from "../PositionText/PositionText";
 import ShadowsShapes1 from "../ShadowsShapes1/ShadowsShapes1";
 
 const Main = () => {
@@ -36,6 +37,7 @@ const Main = () => {
                 <Route element={<ShadowsShapes1 />} path={"/shadows1"} />
                 <Route element={<BasicText />} path={"/basic_text"} />
                 <Route element={<ThreeDText />} path={"/3d_text"} />
+                <Route element={<PositionText />} path={"/position_text"} />
             </Routes>
         </div>
     );

@@ -15,6 +15,7 @@ const Content = () => {
             <NavLink to={"/shadows1"}>shadow shapes 1</NavLink>
             <NavLink to={"/basic_text"}>Basic Text</NavLink>
             <NavLink to={"/3d_text"}>ThreeDText</NavLink>
+            <NavLink to={"/position_text"}>Position text</NavLink>
         </div>
     );
 };
